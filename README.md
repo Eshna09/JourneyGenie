@@ -14,7 +14,7 @@ Interactive Dashboard: Track bookings and itineraries in one place for a hassle-
 
 Customer Support: Integrated chat and query system to resolve issues quickly.
 
-Frontend: HTML5, CSS3, JavaScript, React.js
+Frontend: HTML5, CSS3, JavaScript
 
 Backend: Node.js, Express.js
 

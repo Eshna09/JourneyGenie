@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JourneyGenie - Travels</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <script src="loadTravels.js"></script>
+
+
+</head>
+<body>
+    <%- include('partials/header') %>
+
+    <div class="content2">
+        <div class="aboutUsText">
+            <h1>Travel Options</h1>
+            <p>Choose your preferred mode of travel to explore new destinations with ease and comfort. From local cabs to long-distance buses and eco-friendly bikes, we offer a range of options for every journey.</p>
+        </div>
+
+        <div id="travelOptions" class="imageRow"></div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 JourneyGenie. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Fetch data from JSON and display it in the HTML
+        fetch('/data/travels.json')
+            .then(response => response.json())
+            .then(data => {
+                const travelContainer = document.getElementById('travelOptions');
+                data.forEach(option => {
+                    const div = document.createElement('div');
+                    div.className = 'location';
+                    div.innerHTML = `
+                        <h2><a href="${option.link}">${option.type}</a></h2>
+                        <p>${option.description}</p>
+                    `;
+                    travelContainer.appendChild(div);
+                });
+            })
+            .catch(error => console.error('Error loading JSON:', error));
+    </script>
+</body>
+</html>

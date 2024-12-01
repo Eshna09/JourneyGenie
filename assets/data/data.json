@@ -1,0 +1,21 @@
+{
+    "navigation": [
+        {"text": "Home", "href": "/"},
+        {"text": "About Us", "href": "/about-us"},
+        {"text": "Hotels", "href": "/hotels"},
+        {"text": "Travels", "href": "/travels"},
+        {"text": "My Booking", "href": "/booking"},
+        {"text": "Contact Us", "href": "/contact-us"},
+        {"text": "Login", "href": "/login"},
+        {"text": "Book Now", "href": "/booking"}
+    ],
+    "homeQuote": "Travel Far, Travel Often, Travel Smart.",
+    "signupForm": {
+        "fields": [
+            {"type": "text", "placeholder": "Name"},
+            {"type": "email", "placeholder": "Email"},
+            {"type": "password", "placeholder": "Password"}
+        ],
+        "submitText": "Sign Up"
+    }
+}

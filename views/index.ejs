@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JourneyGenie</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <nav class="navigation">
+        <ul class="navFlex">
+            <!-- Navigation links will be inserted here by JavaScript -->
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div class="leftSection">
+            <div class="homeQuote">
+                <!-- Quote will be inserted here by JavaScript -->
+            </div>
+            <a href="/booknow">
+                <button class="bookNow">Book Now</button>
+            </a>
+        </div>
+
+        <div class="signUp">
+            <form>
+                <ul>
+                    <!-- Sign-up form fields will be inserted here by JavaScript -->
+                </ul>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Fetch JSON data from the external file
+        fetch('/data/data.json')
+            .then(response => response.json())
+            .then(data => {
+                // Populate navigation
+                const navList = document.querySelector('.navFlex');
+                navList.innerHTML = `
+                    <li class="container">
+                        <img src="./images/image 13.svg" style="width: 130px; height: auto; padding: 0; margin: 0;">
+                        <div class="center"> GENIE </div>             
+                    </li>
+                `;
+
+                data.navigation.forEach(item => {
+                    const navItem = document.createElement('li');
+                    const link = document.createElement('a');
+                    link.href = item.href;
+                    link.textContent = item.text;
+                    navItem.appendChild(link);
+                    navList.appendChild(navItem);
+                });
+
+                // Populate the home quote
+                document.querySelector('.homeQuote').textContent = data.homeQuote;
+
+                // Populate the sign-up form
+                const form = document.querySelector('.signUp form ul');
+                form.innerHTML = `<li><div>Sign Up</div></li>`;
+                
+                data.signupForm.fields.forEach(field => {
+                    const li = document.createElement('li');
+                    const input = document.createElement('input');
+                    input.type = field.type;
+                    input.placeholder = field.placeholder;
+                    li.appendChild(input);
+                    form.appendChild(li);
+                });
+
+                const submitLi = document.createElement('li');
+                const submitInput = document.createElement('input');
+                submitInput.type = 'submit';
+                submitInput.value = data.signupForm.submitText;
+                submitLi.appendChild(submitInput);
+                form.appendChild(submitLi);
+            })
+            .catch(error => console.error('Error loading JSON data:', error));
+    </script>
+</body>
+</html>

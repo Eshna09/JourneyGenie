@@ -1,0 +1,17 @@
+[
+    {
+        "type": "Cabs",
+        "link": "cabs.html",
+        "description": "Book reliable and comfortable cabs for your city rides or intercity travel. We offer a wide range of vehicles to suit your needs."
+    },
+    {
+        "type": "Buses",
+        "link": "buses.html",
+        "description": "Travel long distances with our extensive bus network. Enjoy affordable and comfortable rides to your destination."
+    },
+    {
+        "type": "Bikes",
+        "link": "bike.html",
+        "description": "Rent eco-friendly bikes for short city trips or weekend adventures. Stay fit while exploring the town on two wheels."
+    }
+]

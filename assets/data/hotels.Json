@@ -1,0 +1,48 @@
+{
+    "navigation": [
+        {"text": "Home", "href": "/"},
+        {"text": "About Us", "href": "/about-us"},
+        {"text": "Hotels", "href": "/hotels"},
+        {"text": "Travels", "href": "/travels"},
+        {"text": "My Booking", "href": "/booking"},
+        {"text": "Contact Us", "href": "/contact-us"},
+        {"text": "Login", "href": "/login"},
+        {"text": "Book Now", "href": "/booknow"}
+    ],
+    "pageTitle": "Explore Hotels",
+    "locations": [
+      {
+        "city": "Mumbai",
+        "link": "/hotels-2",
+        "description": "Hotels, Budget Hotels, Resorts, Couple Hotels, Near Mumbai Airport"
+      },
+      {
+        "city": "Delhi",
+        "link": "/hotels-3",
+        "description": "Hotels, Budget Hotels, Resorts, Best Hotels, Near IGI Airport"
+      },
+      {
+        "city": "Goa",
+        "description": "Hotels, Budget Hotels, Resorts, Best Hotels, North Goa, Villas"
+      },
+      {
+        "city": "Singapore",
+        "description": "Hotels, 5 Star Hotels, Little India, Orchard Road, Hotels in Sentosa"
+      },
+      {
+        "city": "Bangkok",
+        "description": "Hotels, 3 Star Hotels, 5 Star Hotels, Hostels, Budget Hotels, Hotels in Sukhumvit"
+      },
+      {
+        "city": "Maldives",
+        "description": "Hotels, 3 Star Hotels, Resorts, 5 Star Hotels, 4 Star Hotels, Hotels in Male"
+      }
+    ],
+    "pagination": [
+      { "text": "&laquo;", "href": "/hotels" },
+      { "text": "1", "href": "/hotels" },
+      { "text": "2", "href": "/hotels-2" },
+      { "text": "3", "href": "/hotels-3" },
+      { "text": "&raquo;", "href": "/hotels-2" }
+    ]
+  }

@@ -1,0 +1,515 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/images/37172.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navigation {
+    padding: 10px 20px; /* Maintain padding for navigation */
+}
+
+.navFlex {
+    display: flex;
+    align-items: center; /* Vertically aligns items in the center */
+    justify-content: space-between; /* Distributes items evenly */
+    list-style: none;
+    flex-wrap: nowrap; /* Prevents wrapping to a new line */
+}
+
+.container {
+    position: relative; /* Necessary for absolute positioning of the text */
+    margin-right: 200px; /* Adjusted for spacing from other nav items */
+    height: 60px; /* Set a height for consistency */
+}
+
+.navFlex li {
+    margin-right: 50px; /* Adjusted margin for spacing */
+    margin-top: 0px; /* Aligns all items properly */
+    color: #622222; /* This color will be applied to the li elements */
+    font-weight: bold;
+    font-size: medium;
+}
+
+.navFlex li a {
+    text-decoration: none;
+    color: #8C3E2C; /* Default text color for links */
+    padding: 10px 20px; /* Adjusted padding for links */
+    border-radius: 25px;
+}
+
+.navFlex li a:hover {
+    background-color: rgb(169, 142, 106);
+    color: white; /* Changes color to white on hover */
+}
+
+.navFlex li:last-child {
+    border-radius: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    align-self: center;
+    margin-top: 0px;
+}
+
+.navFlex li:last-child a:hover {
+    background-color: rgb(169, 142, 106);
+}
+
+.center {
+    position: absolute; /* Positioning for overlay */
+    top: 74%; /* Center vertically within the container */
+    left: 50%; /* Center horizontally within the container */
+    transform: translate(-50%, -50%); /* Offset to center text */
+    color: white; /* Text color */
+    font-size: small; /* Font size */
+}
+
+.content {
+    display: flex;
+    flex-direction: row; /* Align children in a row */
+    align-items: flex-start; /* Align items to the top */
+    justify-content: space-between; /* Space them evenly */
+    padding: 60px; /* Maintain padding */
+}
+
+
+.leftSection {
+    width: 60%; /* Adjust the width of the left section */
+   margin-top: -60px;
+}
+
+
+
+.bookNow {
+    border-radius: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    background-color: #bd8667;
+    border: none;
+}
+
+.bookNow:hover {
+    background-color: #fce46d;
+    cursor: pointer;
+}
+
+.signUp {
+    width: 21%; /* Adjust the width of the signup form */
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+    padding: 40px 20px; /* Increase padding to elongate the container */
+    border-radius: 15px;
+    margin-right: 120px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.homeQuote {
+    font-size: 70px;
+    margin-bottom: 40px;
+    margin-top: 60px; /* Adjust this value to push the quote up */
+    line-height: 1.4em;
+    color: white;
+}
+
+
+.signUp form ul {
+    list-style: none;
+}
+
+.signUp form li {
+    margin-bottom: 15px;
+}
+
+.signUp li div {
+    font-size: x-large;
+    color: #622222;
+    font-weight: bold;
+    text-align: center; /* Center the text within the div */
+    width: 100%; /* Ensure the div takes the full width of the container */
+}
+
+.signUp form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.signUp form input[type="submit"] {
+    background-color: #AB5F32;
+    color: white;
+    cursor: pointer;
+}
+
+.signUp form input[type="submit"]:hover {
+    background-color: #793209;
+}
+
+
+.content2 {
+    display: flex;
+    flex-direction: column; /* Stack children in a column */
+    align-items: center; /* Center items horizontally */
+    padding: 60px; /* Maintain padding */
+}
+
+.aboutUsText {
+    color: rgb(36, 10, 10); /* Text color for the About Us section */
+    margin: 60px 0 40px; /* Adjust margins for spacing */
+    text-align: center; /* Center text for better alignment */
+}
+
+.imageRow {
+    display: flex; /* Display images in a row */
+    justify-content: space-between; /* Space evenly */
+    margin: 0; /* Remove margin for better alignment */
+    margin-top: 40px; /* Add space between the paragraph and images */
+    width: 100%; /* Ensure the row takes the full width */
+    max-width: 1200px; /* Max width for the row */
+}
+
+.aboutImage {
+    width: 100%; /* Make images responsive */
+    max-width: 400px; /* Set a maximum width for images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    margin: 0 10px; /* Margin for spacing between images */
+    transition: transform 0.3s ease; /* Smooth transition for the transform */
+}
+
+.aboutImage:hover {
+    transform: rotateX(-40deg); /* Tilt effect to the left on hover */
+}
+
+
+
+.aboutUsText h1{
+    margin-bottom: 15px;
+    color: #8C3E2C;
+}
+
+.hotelsSection {
+    color: #8C3E2C; /* Text color for the hotels section */
+    text-align: center; /* Center the text */
+    margin: 60px 0; /* Adjust margin for spacing */
+}
+
+.hotelsSection h1 {
+    font-size: 50px; /* Heading size for the main title */
+    margin-bottom: 30px; /* Space below heading */
+}
+.imageRow {
+    display: flex; /* Arrange items in a row */
+    flex-wrap: wrap; /* Wrap to a new line if needed */
+    gap: 20px; /* Add space between the items */
+    justify-content: space-between; /* Distribute items evenly */
+}
+
+.location {
+    background-color: rgba(255, 255, 255, 0.8); /* Adds a white background with slight transparency */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding for content */
+    margin: 10px; /* Space around each location */
+    box-sizing: border-box; /* Include padding and border in the total width/height */
+    flex: 1 1 30%; /* Flex property to allow responsive width */
+    min-width: 250px; /* Ensures a minimum width */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.location:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.location h2 {
+    font-size: 30px; /* Size for each location's title */
+    color: #8C3E2C; /* Dark color for the title */
+}
+
+.location p {
+    font-size: 18px; /* Size for each location's description */
+    line-height: 1.5; /* Improve readability */
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: flex-end; /* Align to the right */
+    margin: 20px 60px; /* Spacing around pagination */
+    position: sticky; /* Make it sticky */
+    bottom: 0; /* Stick to the bottom */
+    background-color: #5C3A28; /* Dark brown background */
+    padding: 10px; /* Add some padding */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+.pagination a {
+    color: white; /* Change text color to white for contrast */
+    padding: 10px 15px; /* Padding for links */
+    text-decoration: none; /* Remove underline */
+    border: 1px solid white; /* White border for contrast */
+    border-radius: 5px; /* Rounded corners */
+    margin: 0 5px; /* Spacing between links */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+.pagination a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+}
+
+
+.hotelCard {
+    display: flex;
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: To add a slight background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hotelImage {
+    display: flex;
+    flex-direction: column; /* Align images vertically */
+    margin-right: 20px; /* Space between images and text */
+}
+
+.hotelImage img {
+    width: 100px; /* Adjust size */
+    height: auto;
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+
+.hotelDetails {
+    flex: 1; /* Allow details to take remaining space */
+}
+
+.hotelName, .hotelLocation, .hotelFeature, .hotelDescription, .hotelRating, .hotelPrice, .loginMessage {
+    color: #8C3E2C; /* Dark brown */
+    margin-bottom: 10px;
+}
+
+.discountPrice {
+    text-decoration: line-through; /* To indicate discount */
+    color: gray; /* Color for the original price */
+}
+
+.pagination {
+    position: sticky;
+    bottom: 10px;
+    right: 20px;
+    background-color: #8C3E2C; /* Dark brown for visibility */
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.pageItem {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.bookingcontent {
+    display: flex;
+    flex-direction: column; /* Stack children in a column */
+    align-items: center; /* Center items horizontally */
+    padding: 60px; /* Maintain padding */
+}
+
+.bookingForm {
+    width: 35%; /* Adjust the width for the form */
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+    padding: 40px 20px; /* Padding for the form */
+    border-radius: 15px; /* Rounded corners */
+    margin-top: 20px; /* Space above the form */
+}
+
+.bookingForm ul {
+    list-style: none; /* Remove bullet points */
+}
+
+.bookingForm li {
+    margin-bottom: 15px; /* Space between input fields */
+}
+
+.bookingForm div {
+    font-size: x-large; /* Size for the labels */
+    color: #622222; /* Dark brown color */
+    font-weight: bold; /* Bold text */
+}
+
+.bookingForm input {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding for inputs */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Border style */
+}
+
+.bookingForm input[type="submit"] {
+    background-color: #AB5F32; /* Button background */
+    color: white; /* Button text color */
+    cursor: pointer; /* Pointer on hover */
+}
+
+.bookingForm input[type="submit"]:hover {
+    background-color: #793209; /* Darker on hover */
+}
+
+.loginContainer {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center the form horizontally */
+    justify-content: center; /* Center items vertically */
+    padding: 60px; /* Maintain consistent padding */
+    min-height: 100vh; /* Full viewport height */
+}
+
+.loginForm {
+    width: 35%; /* Adjust the width for the form */
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+    padding: 40px 20px; /* Padding for the form */
+    border-radius: 15px; /* Rounded corners */
+}
+
+.loginForm ul {
+    list-style: none; /* Remove bullet points */
+}
+
+.loginForm li {
+    margin-bottom: 15px; /* Space between input fields */
+}
+
+.loginForm div {
+    font-size: x-large; /* Size for the labels */
+    color: #622222; /* Dark brown color */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center the form title */
+}
+
+.loginForm input {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding for inputs */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Border style */
+}
+
+.loginForm input[type="submit"] {
+    background-color: #AB5F32; /* Button background */
+    color: white; /* Button text color */
+    cursor: pointer; /* Pointer on hover */
+}
+
+.loginForm input[type="submit"]:hover {
+    background-color: #793209; /* Darker on hover */
+}
+
+.loginMessage {
+    font-size: 14px;
+    color: #622222;
+    text-align: center;
+}
+
+.loginMessage a {
+    color: #AB5F32;
+    text-decoration: none;
+}
+
+.loginMessage a:hover {
+    text-decoration: underline;
+}
+
+.bookingcontent {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 60px; /* Maintain padding */
+}
+
+.bookingForm {
+    width: 35%; /* Adjust the width for the form */
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+    padding: 40px 20px; /* Padding for the form */
+    border-radius: 15px; /* Rounded corners */
+    margin-top: 20px; /* Space above the form */
+}
+
+.bookingForm ul {
+    list-style: none; /* Remove bullet points */
+}
+
+.bookingForm li {
+    margin-bottom: 15px; /* Space between input fields */
+}
+
+.bookingForm div {
+    font-size: x-large; /* Size for the labels */
+    color: #622222; /* Dark brown color */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center the form title */
+}
+
+.bookingForm input,
+.bookingForm textarea {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding for inputs */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Border style */
+}
+
+.bookingForm input[type="submit"] {
+    background-color: #AB5F32; /* Button background */
+    color: white; /* Button text color */
+    cursor: pointer
+}
+
+.contactForm {
+    width: 35%; /* Adjust the width for the form */
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+    padding: 40px 20px; /* Padding for the form */
+    border-radius: 15px; /* Rounded corners */
+    margin-top: 20px; /* Space above the form */
+}
+
+.contactForm ul {
+    list-style: none; /* Remove bullet points */
+}
+
+.contactForm li {
+    margin-bottom: 15px; /* Space between input fields */
+}
+
+.contactForm div {
+    font-size: x-large; /* Size for the labels */
+    color: #622222; /* Dark brown color */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center the form title */
+}
+
+.contactForm input,
+.contactForm textarea {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding for inputs */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Border style */
+}
+
+.contactForm input[type="submit"] {
+    background-color: #AB5F32; /* Button background */
+    color: white; /* Button text color */
+    cursor: pointer; /* Pointer on hover */
+}
+
+.contactForm input[type="submit"]:hover {
+    background-color: #793209; /* Darker on hover */
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+
+    <div class="bookingcontent">
+        <h1 class="hotelsSection">Make a Booking</h1>
+        <div class="bookingForm">
+            <form action="/book" method="post">
+                <ul>
+                    <li>
+                        <div>BOOKING ID</div>
+                        <input type="text" placeholder="XXXXX" name="bookingID" required>
+                    </li>
+                    <li>
+                        <div>NAME</div>
+                        <input type="text" placeholder="Enter Your Name" name="name" required>
+                    </li>
+                    <li>
+                        <div>PLACE</div>
+                        <input type="text" value="Enter Your Destination" name="place">
+                    </li>
+                    <li>
+                        <div>DATE</div>
+                        <input type="date" name="date">
+                    </li>
+                    <li>
+                        <input type="submit" value="Submit">
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

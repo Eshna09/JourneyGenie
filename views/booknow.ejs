@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now - JourneyGenie</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+
+    <div class="content bookingcontent">
+        <h1>Book Your Journey</h1>
+        
+        <div class="bookingForm">
+            <form>
+                <ul>
+                    <li><div>Booking Details</div></li>
+                    <li><input type="text" placeholder="Full Name" required></li>
+                    <li><input type="email" placeholder="Email" required></li>
+                    <li><input type="tel" placeholder="Phone Number" required></li>
+                    <li>
+                        <input type="date" required>
+                        <input type="time" required>
+                    </li>
+                    <li>
+                        <textarea placeholder="Special Requests" rows="4"></textarea>
+                    </li>
+                    <li><input type="submit" value="Confirm Booking"></li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
